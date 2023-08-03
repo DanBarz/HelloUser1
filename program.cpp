@@ -1,12 +1,9 @@
 #include "splashkit.h"
-#define STRO 0.33
+#include "inputs.h"
 
 using namespace std;
-//this is a promise 
-int read_int(string prompt);
-string collect_string (string prompt);
-void output_person(string name, int age);
-double output_air_speed(int frequency, int amp);
+
+#define STRO 0.33
 
 // main program starts, it collects data from user and then outputs result
 int main() {
