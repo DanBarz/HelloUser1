@@ -1,32 +1,12 @@
 #include "splashkit.h"
-
 #define STRO 0.33
 
-// output the person info
-void output_person(string name, int age) {
-    write_line(name);
-    write("Age is: ");
-    write_line(age);
-}
-
-// reads the string from the user and outputs the result as a int
-int read_int(string prompt) {
-    write(prompt);
-    return convert_to_integer(read_line());
-}
-
-double output_air_speed(int frequency, int amp) {
-    double airspeedcalc;
-    airspeedcalc = frequency * amp * 0.01 / STRO;
-
-    return airspeedcalc;
-}
-
-// reads the string from user
-string collect_string (string prompt) {
-    write(prompt);
-    return read_line();
-}
+using namespace std;
+//this is a promise 
+int read_int(string prompt);
+string collect_string (string prompt);
+void output_person(string name, int age);
+double output_air_speed(int frequency, int amp);
 
 // main program starts, it collects data from user and then outputs result
 int main() {
